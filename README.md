@@ -10,6 +10,19 @@ Make sure you have the following:
 * [.NET Framework 4.6.2](https://www.microsoft.com/en-us/download/details.aspx?id=53345)
 * Patience
 
+## Design
+
+The application will using the following to allow for game system browsing:
+
+* Developer
+* Game System (Console)
+* Game System Games
+
+### PHASE 1 Expectations
+
+1. When a **Developer** is selected, the **Game System** select should populate with available game consoles for that developer.
+1. When a **Game System** is selected, the **Game System Games** select should populate with available video game titles for that console.
+
 ## Contributing
 
 1. Fork it!
