@@ -7,7 +7,9 @@ This is a simple demo project aimed at demonstrating the interaction of dependen
 Make sure you have the following:
 
 * Visual Studio 2015 Community
+* [Visual Studio 2015 Update 3](https://go.microsoft.com/fwlink/?LinkId=691129)
 * [.NET Framework 4.6.2](https://www.microsoft.com/en-us/download/details.aspx?id=53345)
+* [.NET Core 1.0.0 - VS 2015 Tooling Preview 2](https://go.microsoft.com/fwlink/?LinkID=824849)
 * Patience
 
 ## Design
@@ -15,13 +17,17 @@ Make sure you have the following:
 The application will using the following to allow for game system browsing:
 
 * Developer
-* Game System (Console)
+* Game Systems (Consoles)
 * Game System Games
 
 ### PHASE 1 Expectations
 
-1. When a **Developer** is selected, the **Game System** select should populate with available game consoles for that developer.
-1. When a **Game System** is selected, the **Game System Games** select should populate with available video game titles for that console.
+- [X] When a **Developer** is selected, the **Game System** select should populate with available game consoles for that developer.
+- [ ] When a **Game System** is selected, the **Game System Games** select should populate with available video game titles for that console.
+
+### PHASE 2 Expectations
+
+- [ ] When a **Developer** is selected and the **Game System** select only has __one__ selectable option, it should be automatically selected for that developer.
 
 ## Contributing
 
