@@ -14,6 +14,10 @@ namespace CascadingSelectsDemo.Controllers
             {
                 return Json(new[] { "XBox 360", "Playstation 3", "XBox One" }, JsonRequestBehavior.AllowGet);
             }
+            if (developer.Equals("stan", StringComparison.OrdinalIgnoreCase))
+            {
+                return Json(new[] { "Playstation 3", "XBox One" }, JsonRequestBehavior.AllowGet);
+            }
 
             return Json(new[] { "" }, JsonRequestBehavior.AllowGet);
         }
