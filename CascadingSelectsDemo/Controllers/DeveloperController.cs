@@ -19,7 +19,7 @@ namespace CascadingSelectsDemo.Controllers
                 return Json(new[] { "Playstation 3", "XBox One" }, JsonRequestBehavior.AllowGet);
             }
 
-            return Json(new[] { "" }, JsonRequestBehavior.AllowGet);
+            return Json(new string[] {}, JsonRequestBehavior.AllowGet);
         }
     }
 }
