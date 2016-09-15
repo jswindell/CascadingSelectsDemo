@@ -9,7 +9,6 @@ Make sure you have the following:
 * [Visual Studio 2015 Community](https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx)
 * [Visual Studio 2015 Update 3](https://go.microsoft.com/fwlink/?LinkId=691129)
 * [.NET Framework 4.6.2](https://www.microsoft.com/en-us/download/details.aspx?id=53345)
-* [.NET Core 1.0.0 - VS 2015 Tooling Preview 2](https://go.microsoft.com/fwlink/?LinkID=824849)
 
 ## Design
 
