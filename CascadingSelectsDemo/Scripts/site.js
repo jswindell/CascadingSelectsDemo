@@ -25,7 +25,7 @@ $gameSystem.on("change", function () {
     $gameSystemGames.html("<option selected>-- SELECT --</option>");
 
     if ($gameSystem.prop("selectedIndex") > 0) {
-        $.getJSON("/gamesystem/" + $developer.val() + "/" + $gameSystem.val() + "/games", function (data) {
+        $.getJSON("/developer/" + $developer.val() + "/consoles/" + $gameSystem.val(), function (data) {
             var html = "<option selected>-- SELECT --</option>";
 
             for (var i = 0; i < data.length; i++) {
