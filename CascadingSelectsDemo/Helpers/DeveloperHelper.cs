@@ -24,7 +24,7 @@ namespace CascadingSelectsDemo
             return EmptyStringArray;
         }
 
-        public static string[] SelectGames(string developer, string console)
+        public static string[] GetConsoleGames(string developer, string console)
         {
             if (developer.Equals("james", StringComparison.OrdinalIgnoreCase))
             {
@@ -32,8 +32,6 @@ namespace CascadingSelectsDemo
                     return new[] { "Fifa", "Madden", "Mario" };
                 else if (console.Equals("XBox One", StringComparison.OrdinalIgnoreCase))
                     return new[] { "Doom", "NBA2K" };
-                else
-                    return new[] { "Virtua Tennis", "Bowling" };
             }
             else if (developer.Equals("stan", StringComparison.OrdinalIgnoreCase))
             {
@@ -41,11 +39,9 @@ namespace CascadingSelectsDemo
                     return new[] { "Tecmo Bowl", "Zelda", "Contra" };
                 else if (console.Equals("XBox One", StringComparison.OrdinalIgnoreCase))
                     return new[] { "Chess", "Archery" };
-                else
-                    return new[] { "Warcraft", "Baseball" };
             }
-            else
-                return EmptyStringArray;
+
+            return EmptyStringArray;
         }
     }
 }

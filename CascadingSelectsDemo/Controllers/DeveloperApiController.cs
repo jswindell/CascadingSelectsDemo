@@ -19,7 +19,7 @@ namespace CascadingSelectsDemo.Controllers
         [Route("{developer}/consoles/{console}")]
         public ActionResult Games(string developer, string console)
         {
-            return Json(DeveloperHelper.SelectGames(developer, console), JsonRequestBehavior.AllowGet);
+            return Json(DeveloperHelper.GetConsoleGames(developer, console), JsonRequestBehavior.AllowGet);
         }
     }
 }
