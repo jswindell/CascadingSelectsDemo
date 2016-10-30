@@ -10,20 +10,12 @@ namespace CascadingSelectsDemo.Controllers
     {
         public ActionResult Consoles(string developer)
         {
-            if (developer.Equals("james", StringComparison.OrdinalIgnoreCase))
-            {
-                return Json(new[] { "XBox 360", "Playstation 3", "XBox One" }, JsonRequestBehavior.AllowGet);
-            }
-            if (developer.Equals("stan", StringComparison.OrdinalIgnoreCase))
-            {
-                return Json(new[] { "Playstation 3", "XBox One" }, JsonRequestBehavior.AllowGet);
-            }
-
-            return Json(new string[] {}, JsonRequestBehavior.AllowGet);
+            return Json(DeveloperHelper.GetConsoles(developer), JsonRequestBehavior.AllowGet);
         }
+
         public ActionResult Games(string developer, string console)
         {
-            return Json(GamesHelper.SelectGames(developer, console), JsonRequestBehavior.AllowGet);
+            return Json(DeveloperHelper.SelectGames(developer, console), JsonRequestBehavior.AllowGet);
         }
     }
 }
