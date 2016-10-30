@@ -9,7 +9,7 @@ $developer.on("change", function () {
     $gameSystemGames.html("<option selected>-- SELECT --</option>");
 
     if ($developer.prop("selectedIndex") > 0) {
-        $.getJSON("/developer/" + $developer.val() + "/consoles", function (data) {
+        $.getJSON("/api/v1/developer/" + $developer.val() + "/consoles", function (data) {
             var html = "<option selected>-- SELECT --</option>";
 
             for (var i = 0; i < data.length; i++) {
@@ -25,7 +25,7 @@ $gameSystem.on("change", function () {
     $gameSystemGames.html("<option selected>-- SELECT --</option>");
 
     if ($gameSystem.prop("selectedIndex") > 0) {
-        $.getJSON("/developer/" + $developer.val() + "/consoles/" + $gameSystem.val(), function (data) {
+        $.getJSON("/api/v1/developer/" + $developer.val() + "/consoles/" + $gameSystem.val(), function (data) {
             var html = "<option selected>-- SELECT --</option>";
 
             for (var i = 0; i < data.length; i++) {
