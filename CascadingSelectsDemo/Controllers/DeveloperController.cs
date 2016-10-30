@@ -21,5 +21,9 @@ namespace CascadingSelectsDemo.Controllers
 
             return Json(new string[] {}, JsonRequestBehavior.AllowGet);
         }
+        public ActionResult Games(string developer, string console)
+        {
+            return Json(GamesHelper.SelectGames(developer, console), JsonRequestBehavior.AllowGet);
+        }
     }
 }

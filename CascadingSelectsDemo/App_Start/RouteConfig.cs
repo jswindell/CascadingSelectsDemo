@@ -21,8 +21,8 @@ namespace CascadingSelectsDemo
 
             routes.MapRoute(
                 name: "Game Systems",
-                url: "gamesystem/{developer}/{console}/games",
-                defaults: new { controller = "GameSystem", action = "Games", developer="", console="" }
+                url: "developer/{developer}/consoles/{console}",
+                defaults: new { controller = "Developer", action = "Games", developer="", console="" }
             );
 
             routes.MapRoute(
