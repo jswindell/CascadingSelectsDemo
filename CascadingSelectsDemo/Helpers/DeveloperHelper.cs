@@ -21,6 +21,11 @@ namespace CascadingSelectsDemo
                 return new[] { "Playstation 3", "XBox One" };
             }
 
+            if (developer.Equals("steve", StringComparison.OrdinalIgnoreCase))
+            {
+                return new[] { "Nintendo Switch" };
+            }
+
             return EmptyStringArray;
         }
 
@@ -29,16 +34,31 @@ namespace CascadingSelectsDemo
             if (developer.Equals("james", StringComparison.OrdinalIgnoreCase))
             {
                 if (console.Equals("Playstation 3", StringComparison.OrdinalIgnoreCase))
+                {
                     return new[] { "Fifa", "Madden", "Mario" };
+                }
                 else if (console.Equals("XBox One", StringComparison.OrdinalIgnoreCase))
+                {
                     return new[] { "Doom", "NBA2K" };
+                }
             }
             else if (developer.Equals("stan", StringComparison.OrdinalIgnoreCase))
             {
                 if (console.Equals("Playstation 3", StringComparison.OrdinalIgnoreCase))
+                {
                     return new[] { "Tecmo Bowl", "Zelda", "Contra" };
+                }
                 else if (console.Equals("XBox One", StringComparison.OrdinalIgnoreCase))
+                {
                     return new[] { "Chess", "Archery" };
+                }
+            }
+            else if (developer.Equals("steve", StringComparison.OrdinalIgnoreCase))
+            {
+                if (console.Equals("Nintendo Switch", StringComparison.OrdinalIgnoreCase))
+                {
+                    return new[] { "Zelda: Breath of the Wild", "Project Sonic 2017" };
+                }
             }
 
             return EmptyStringArray;

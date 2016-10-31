@@ -25,7 +25,7 @@ The application will using the following to allow for game system browsing:
 
 ### PHASE 2 Expectations
 
-- [ ] When a **Developer** is selected and the **Game System** select only has _one_ selectable option, it should be automatically selected for that developer.
+- [X] When a **Developer** is selected and the **Game System** select only has _one_ selectable option, it should be automatically selected for that developer.
 
 ## Contributing
 

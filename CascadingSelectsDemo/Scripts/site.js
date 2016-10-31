@@ -17,6 +17,10 @@ $developer.on("change", function () {
             }
 
             $gameSystem.html(html);
+
+            if (data.length === 1) {
+                $gameSystem.prop("selectedIndex", 1).change();
+            }
         });
     }
 });
